@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 7px;
+    background-color: #005CFF;
+    border-radius: 10px;
+}
+
+/* Navigation */
+
+.navbar-top {
+    width: 100vw;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    transition: .5s;
+    border-radius: 0 0 20px 20px;
+    z-index: 10;
+}
+
+.navbar-top.roll {
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 0 0 20px 20px;
+}
+
+.navbar-top.roll ul #nav-logo span {
+    background-color: #005CFF;
+    color: white;
+}
+
+.navbar-top.roll #nav-top .nav-links {
+    color: #253A44;
+}
+
+.navbar-top.roll #nav-top .nav-links:hover {
+    background-color: #005eff5b;
+}
+
+.navbar-top.roll #nav-top #nav-aboutus {
+    background-color: #005CFF;
+    color: white;
+}
+
+.navbar-top.roll #nav-top #nav-aboutus:hover {
+    background-color: #013b9e;
+}
+
+#nav-logo {
+    margin-left: 1vw;
+}
+
+span {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #005CFF;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 26px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+}
+
+li {
+    list-style: none;
+}
+
+#nav-top {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+}
+
+.nav-links {
+    width: 100px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    transition: .5s;
+}
+
+.nav-links:hover {
+    background-color: rgba(255, 255, 255, 0.582);
+}
+
+#nav-aboutus {
+    font-size: 18px;
+    width: 120px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    color: #1b96fa;
+    font-weight: bold;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+    transition: .5s;
+}
+
+#nav-aboutus:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+/* Header */
+
+.header-content {
+    width: 100%;
+    height: 600px;
+    background-image: linear-gradient(to right, #005CFF, #1bf2fa);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-content main {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.header-content main h1 {
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+
+.header-content main p {
+    font-size: 15px;
+    border: solid 2px white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.333);
+}
+
+/* Content Section */
+
+.content {
+    font-family: 'Cairo Play', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    color: #253A44;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.content .margin-content {
+    margin: 10px 0 10px 0;
+}
+
+hr {
+    width: 700px;
+    border: 1px solid #253A44;
+    margin: 50px 0 50px 0;
+}
+
+summary {
+    cursor: pointer;
+    padding: 0 15px;
+    display: inline;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    background-color: #005CFF;
+    transition: .5s;
+    box-shadow: 5px 5px 10px #00000059;
+    margin-bottom: 30px;
+}
+
+summary:hover {
+    transform: scale(1.05);
+}
+
+.exemplos {
+    background-color: #000;
+    border-top: 30px solid #343541;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(2, 160, 2);
+    font-size: 15px;
+    font-family: 'monospace';
+    margin: 20px 0 20px 0;
+}
+
+/* Members Modal */
+
+#image-members {
+    display: flex;
+    justify-content: space-between;
+}
+
+#image-members abbr,
+figcaption {
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+#image-members figure img {
+    border-radius: 10px;
+    width: 150px;
+}
+
+#open-modal {
+    background-color: #007bff;
+}
+
+#fade {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 10;
+}
+
+#modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    max-width: 90%;
+    background-color: #005CFF;
+    padding: 1.2rem;
+    border-radius: 0.5rem;
+    z-index: 15;
+    color: white;
+    font-family: 'Cairo Play';
+}
+
+#modal button {
+    padding: 7px 20px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00000033;
+    font-family: 'Cairo Play', sans-serif;
+    opacity: 0.9;
+    font-weight: bold;
+    color: #005CFF;
+    font-size: 17px;
+    transition: .5s;
+}
+
+#modal button:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+#fade,
+#modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    font-size: 30px;
+}
+
+.modal-body p {
+    margin-bottom: 1rem;
+}
+
+#modal.hide,
+#fade.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide {
+    left: 0;
+}
+
+/* Bottom Links */
+
+.bottom-links {
+    font-family: 'Cairo Play', sans-serif;
+}
+
+.bottom-links nav {
+    margin-top: 50px;
+}
+
+.bottom-links ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-links li {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    font-size: 17px;
+    transition: .5s;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.bottom-links li:hover {
+    transform: scale(1.05);
+}
+
+.bottom-links li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #005CFF;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00000033;
+    color: white;
+    font-weight: bolder;
+    transition: .5s;
+}
+
+.bottom-links li a:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 400px;
+    background-color: #ECECEC;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    margin-top: 100px;
+}
+
+footer a {
+    color: black;
+}
+
+footer figcaption {
+    color: black;
+}
+
+#apoo h2 {
+    font-family: 'Nabla', 'Cairo Play', sans-serif;
+    font-size: 30px;
+}
+
+section .githubs figcaption {
+    text-align: center;
+}
+
+.githubs {
+    display: flex;
+    justify-content: space-around;
+}
+
+#imggithub {
+    transition: 0.5s;
+    border-radius: 100%;
+    opacity: 0.8;
+}
+
+#imggithub:hover {
+    opacity: 1;
+    transform: scale(1.03);
+    border-radius: 100%;
+}

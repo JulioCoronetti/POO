@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programação Orientada a Objetos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pilares.css">
+    <link rel="shortcut icon" href="images/hub/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navegação -->
+    <nav class="navbar-top">
+        <ul>
+            <li id="nav-logo">
+                <p><span>P</span> <span>O</span> <span>O</span></p>
+            </li>
+        </ul>
+        <ul id="nav-top">
+            <li><a href="#" class="nav-links">Home</a></li>
+            <li><a href="#contact" class="nav-links">Contact</a></li>
+            <li><a href="#members" id="nav-aboutus" class="open-modal">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header class="header-content">
+        <main>
+            <h1>Programação Orientada a Objetos</h1>
+            <p>Neste site você vai entender como a Programação Orientada a Objetos é importante, e principalmente como
+                ela funciona!</p>
+        </main>
+    </header>
+
+    <!-- Content Section -->
+    <section class="content">
+        <hr>
+        <!-- First Text -->
+        <h2>Programação Orientada a Objetos</h2>
+        <p>Seja Bem vindo!👋 Através deste artigo você entenderá sobre a <strong>Programação orientada a
+                objetos</strong>, que é um conhecimento muito importante para qualquer desenvolvedor!</p>
+
+        <img src="images/hub/oop.png" alt="Image OOP" width="700px">
+        
+        <!-- Definition -->
+        <div class="margin-content">
+            <h2>Definição</h2>
+            <p id="caracteristicas">A programação orientada a objetos (POO) é um paradigma de programação que organiza o design de software
+                em
+                torno de dados ou objetos, em vez de funcionalidade e lógica. Nesse paradigma, os objetos são definidos
+                como
+                campos de dados com propriedades e comportamentos exclusivos. A POO facilita o reuso e manutenção do
+                código
+                através do encapsulamento, abstração, polimorfismo, design patterns e a separação de interface e
+                implementação.</p>
+        </div>
+
+        <!-- characteristics -->
+        <div class="margin-content">
+            <h2>Características</h2>
+            <p>Na programação orientada a objetos, os objetos são modelados como entidades autônomas, pois possuem
+                atributos
+                e comportamentos independentes. Esses objetos representam elementos do mundo real e seus comportamentos.
+                A
+                POO permite que você crie programas mais modulares, flexíveis e fáceis de entender. Além disso, ela
+                oferece
+                uma maneira intuitiva de pensar sobre o design do software, aproximando-o do manuseio das coisas do
+                mundo
+                real.</p>
+            <hr>
+        </div>
+
+        <!-- Pilares da POO -->
+        <div class="margin-content">
+            <h2>Pilares da POO</h2>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1">
+                    <input type="radio" name="radio-btn" id="radio2">
+                    <input type="radio" name="radio-btn" id="radio3">
+                    <input type="radio" name="radio-btn" id="radio4">
+
+                    <div class="slide primeiro">
+                        <img src="images/content/Pilares/Encapsulamento.png" alt="Encapsulamento">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/content/Pilares/Abstração.png" alt="Abstração">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/content/Pilares/Polimorfismo.png" alt="Polimorfismo">
+                    </div>
+
+                    <div class="slide">
+                        <img src="images/content/Pilares/Herança.png" alt="Herança">
+                    </div>
+
+                    <div class="navegacao-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+
+
+                </div>
+
+                <div class="manual-navegacao">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Members -->
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+
+      <div class="modal-header">
+            <p>Sobre nós... <br> <strong>A tropa do Isla!</strong></p>
+            <button id="close-modal">Fechar</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div id="image-members">
+            <figure>
+                <img src="images/members/snipermonkey.jpg" alt="SniperMonkey image">
+                <figcaption><abbr title="Cauã">SniperMonkey</abbr></figcaption>
+            </figure>
+            <figure>
+                <img src="images/members/spola157.webp" alt="Spola157 image">
+                <figcaption><abbr title="Giovanni">Spola157</abbr></figcaption>
+            </figure>
+            <figure>
+                <img src="images/members/timexp.jpg" alt="timexP image">
+                <figcaption><abbr title="Julio cotonete">timexP</abbr></figcaption>
+            </figure>
+            <figure>
+                <img src="images/members/macedo.jpg" alt="Void image">
+                <figcaption><abbr title="Macedo">Void</abbr></figcaption>
+            </figure>
+        
+        </div>
+      </div>
+    </div>
+
+    <!-- Continuation Section -->
+    <section class="content">
+
+        <div class="margin-content" id="objetos">
+            <hr>
+            <!-- Objetos -->
+            <h2>O que é um Objeto?</h2>
+            <p>Um objeto é uma entidade que combina dados (atributos) e comportamento (métodos) em um único pacote. Uma
+                classe é a planta ou o molde que define como os objetos de um tipo específico devem ser criados. Os
+                objetos são então instâncias dessas classes.</p>
+
+            <h3>Como instanciar um objeto?</h3>
+            <p>Instanciar um objeto significa criar uma nova instância desse objeto, com base em uma classe existente.
+                Quando você instancia um objeto, está criando uma cópia da classe que pode ser usada para armazenar
+                dados específicos e executar operações específicas definidas na classe.</p>
+
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+public class Pessoa {
+    String nome;
+    int idade;
+
+    void imprimirInformacoes() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Idade: " + idade + " anos");
+    }
+
+    public static void main(String[] args) {
+        Pessoa pessoa1 = new Pessoa();
+        pessoa1.nome = "Alice";
+        pessoa1.idade = 25;
+
+        Pessoa pessoa2 = new Pessoa();
+        pessoa2.nome = "Bob";
+        pessoa2.idade = 30;
+
+        pessoa1.imprimirInformacoes();
+        pessoa2.imprimirInformacoes();
+    }
+}
+                    </pre>
+                </div>
+            </details>
+            <hr>
+        </div>
+
+        <div class="margin-content">
+            <!-- Class -->
+            <h2>O que é uma classe?</h2>
+            <p>Em programação orientada a objetos, uma classe é um modelo ou blueprint que define um conjunto de
+                atributos (variáveis) e métodos (funções) que os objetos criados a partir dela terão. As classes são a
+                base da programação orientada a objetos, permitindo que você crie objetos que compartilham
+                características e comportamentos comuns.</p>
+
+            <!-- Normal Class -->
+            <h3>Classes Normais:</h3>
+            <p>Essas são classes regulares que você define com um nome específico e que podem ser instanciadas para
+                criar objetos. Aqui está um exemplo simples de uma classe chamada "Carro" em Java:</p>
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+public class Carro {
+    // Atributos
+    String marca;
+    String modelo;
+    int ano;
+
+    // Construtor
+    public Carro(String marca, String modelo, int ano) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.ano = ano;
+    }
+
+    // Método
+    public void ligar() {
+        System.out.println("O carro está ligado.");
+    }
+}
+                    </pre>
+                </div>
+            </details>
+
+            <!-- Abstracts Class-->
+            <h3>Classes abstratas:</h3>
+            <p> Uma classe abstrata é uma classe que não pode ser instanciada diretamente, mas pode ser estendida por
+                outras classes. Ela é usada quando você quer definir um conjunto de métodos que as subclasses devem
+                implementar. Aqui está um exemplo:</p>
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+public abstract class Forma {
+    // Método abstrato para calcular a área
+    public abstract double calcularArea();
+}
+
+public class Retangulo extends Forma {
+    private double comprimento;
+    private double largura;
+
+    public Retangulo(double comprimento, double largura) {
+        this.comprimento = comprimento;
+        this.largura = largura;
+    }
+
+    @Override
+    public double calcularArea() {
+        return comprimento * largura;
+    }
+}
+                    </pre>
+                </div>
+            </details>
+
+            <!-- Internal Class-->
+            <h3>Classes internas:</h3>
+            <p>Classes internas são classes definidas dentro de outras classes, enquanto classes anônimas são classes
+                que não têm nome e são geralmente usadas para implementar interfaces ou criar objetos com comportamento
+                específico. Aqui está um exemplo de classe interna em Java:</p>
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+public class Outer {
+    private int x = 10;
+
+    public class Inner {
+        public void mostrarX() {
+            System.out.println("Valor de x: " + x);
+        }
+    }
+}
+                    </pre>
+                </div>
+            </details>
+            <hr>
+        </div>
+
+        <div>
+            <!-- Atributs -->
+            <h2>O que são atributos?</h2>
+            <p>Atributos são variáveis que pertencem a uma classe em programação orientada a objetos e são usadas para
+                representar as características ou propriedades dos objetos criados a partir dessa classe. Cada objeto
+                possui seus próprios valores de atributos. Aqui está um exemplo em Java:</p>
+            <div class="exemplos">
+                <pre>
+public class Carro {
+    // Atributos
+    String marca;
+    String modelo;
+    int ano;
+}                    
+                </pre>
+            </div>
+            <hr>
+        </div>
+
+        <div class="margin-content">
+            <!-- Methods -->
+            <h2>O que são Métodos?</h2>
+            <p>Métodos em programação orientada a objetos são blocos de código que definem comportamentos específicos
+                que os objetos de uma classe podem executar. Eles representam as ações ou operações que podem ser
+                realizadas nos objetos. Métodos podem receber parâmetros, processar dados e retornar resultados. Eles
+                encapsulam a funcionalidade de uma classe, permitindo a interação com os objetos.</p>
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+public class Calculadora {
+    // Método para somar dois números
+    public int somar(int num1, int num2) {
+        return num1 + num2;
+    }
+}                        
+                    </pre>
+                </div>
+            </details>
+
+            <h3>Modificadores de Acesso:</h3>
+            <p>Os modificadores de acesso são palavras-chave em Java que definem a visibilidade e o acesso aos membros
+                de uma classe, incluindo métodos e atributos. Existem quatro principais modificadores de acesso em Java,
+                que são o <strong>public, private, protected e default(sem modificador)</strong></p>
+            <hr>
+        </div>
+
+        <div class="margin-content">
+            <!-- Packges -->
+            <h2>O que são Pacotes</h2>
+            <p id="enumeracoes">Pacotes em Java são estruturas usadas para organizar e agrupar classes relacionadas em um espaço de nomes específico. Eles ajudam a evitar conflitos de nomeação entre classes e a organizar o código de maneira mais modular e hierárquica. Pacotes também fornecem controle de acesso, permitindo que você especifique quais classes são acessíveis por outras classes fora do pacote.</p>
+        </div>
+
+        <div class="margin-content">
+            <!-- Enumarations -->
+            <h2>O que são enumerações?</h2>
+            <p>Em programação, enumerações, ou simplesmente enums, são tipos de dados que consistem em um conjunto fixo de valores nomeados. Cada valor em uma enumeração é chamado de membro da enumeração. Enums são úteis quando você precisa representar um conjunto predefinido de constantes que têm significados específicos e bem definidos.</p>
+            <div class="exemplos">
+                <pre>
+public enum DiaDaSemana {
+    DOMINGO, SEGUNDA, TERCA, QUARTA, QUINTA, SEXTA, SABADO
+}
+                </pre>
+            </div>
+            <p>Neste exemplo, criamos uma enumeração chamada DiaDaSemana que representa os sete dias da semana. Cada dia é um membro da enumeração com um nome associado.</p>
+            <hr>
+        </div>
+
+        <div class="margin-content">
+            <!-- Serialization -->
+            <h2>O que é Serialização de Objetos em Java?</h2>
+            <p>Em resumo, a serialização de objetos em Java é um mecanismo que permite que objetos sejam transformados em uma forma que pode ser armazenada ou transmitida e posteriormente reconstruída. É amplamente utilizado para persistência de dados e comunicação entre sistemas distribuídos em aplicações Java.</p>
+            <details>
+                <summary>Exemplo</summary>
+                <div class="exemplos">
+                    <pre>
+import java.io.*;
+
+public class ExemploSerializacao {
+    public static void main(String[] args) {
+        // Objeto a ser serializado
+        MinhaClasse objeto = new MinhaClasse(42, "Exemplo");
+
+        try {
+            // Cria um ObjectOutputStream para escrever o objeto em um arquivo
+            FileOutputStream fileOut = new FileOutputStream("objeto.ser");
+            ObjectOutputStream out = new ObjectOutputStream(fileOut);
+
+            // Escreve o objeto serializado no arquivo
+            out.writeObject(objeto);
+
+            // Fecha os streams
+            out.close();
+            fileOut.close();
+
+            System.out.println("Objeto serializado e salvo em objeto.ser");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+                    </pre>
+                </div>
+            </details>
+            <hr>
+        </div>
+
+        <div class="margin-content">
+            <!-- Objects Relationships-->
+            <h2>O que é o relacionamento de objetos?</h2>
+            <p>Um relacionamento de objetos em programação orientada a objetos se refere à maneira como objetos interagem e se comunicam entre si em um sistema orientado a objetos. Esses relacionamentos são fundamentais para modelar o comportamento de sistemas complexos e representar a interação entre diferentes partes do software. Existem vários tipos de relacionamentos de objetos, que são a <strong>Associação, Agregação, Composição, Herança, Implementação de Interfaces, Dependência, Associação Bidirecional e Associação Multiplicidade</strong>.</p>
+            <p>Em resumo o relacionamentos de objetos são essenciais para modelar sistemas complexos de maneira eficaz na programação orientada a objetos, permitindo uma representação precisa da interação e da estrutura dos objetos em um sistema. Cada tipo de relacionamento tem suas próprias implicações e é escolhido com base nos requisitos e na lógica de negócios do sistema em questão.</p>
+        </div>
+    </section>
+
+    <!-- Bottom Links-->
+    <section class="bottom-links">
+        <hr>
+        <h2>Ficou com alguma duvida?</h2>
+        <p>Utilize os links abaixo para rever o conteúdo!</p>
+        <nav>
+            <ul>
+                <li>
+                    <p>Você entendeu o que são objetos? Não? </p>
+                    <a href="#objetos">Confira!</a>
+                </li>
+                <li>
+                    <p>Você sabe quais são as características da POO? Não? </p>
+                    <a href="#caracteristicas">Confira!</a>
+                </li>
+                <li>
+                    <p>Você sabe o que são enumerações em POO? Não? </p>
+                    <a href="#enumeracoes">Confira!</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <section id="apoo">
+            <h2>A Programação <br> Orientada <br> a Objetos &copy;</h2>
+        </section>
+
+        <section>
+            <h3>Sorocaba</h3>
+            <a href="mailto:tropadoislabr@mail.com"><p>tropadoislabr@mail.com</p></a>
+            <p>+55 15 69420-4519</p>
+            <p>Unit 02, Casa do chapéu, <br>70 Sorocaba - SP, Brazil</p>
+            <a href="https://maps.app.goo.gl/unNt3unkZdQ5ydLy9" target="_blank">Veja no mapa</a>
+        </section>
+
+        <section>
+            <h3>Islã</h3>
+            <a href="mailto:tropadoislaaf@mail.com"><p>tropadoislaaf@mail.com</p></a>
+            <p>+55 15 69420-4519</p>
+            <p>Unit 01, Centro da tropa, <br>37 Kabul کابل, Afeganistão</p>
+            <a href="https://maps.app.goo.gl/MxE89GSCV3oDJpoW9" target="_blank">Veja no mapa</a>
+        </section>
+
+        <section>
+            <h3>Quer saber mais sobre nossos projetos?</h3>
+            <p style="text-align: center; margin: 10px 0 10px 0;">Follow us:</p>
+            <div class="githubs">
+                <figure>
+                    <a href="https://github.com/comrade-josef" target="_blank"><abbr title="SniperMonkey"><img src="images/hub/github.png" alt="SniperMonkey Github" width="50px" id="imggithub"></abbr></a>
+                    <figcaption>Sniper</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://github.com/DEVspolaor" target="_blank"><abbr title="Spola157"><img src="images/hub/github.png" alt="Spola157 Github" width="50px" id="imggithub"></abbr></a>
+                    <figcaption>Spola</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://github.com/JulioCoronetti" target="_blank"><abbr title="timexP"><img src="images/hub/github.png" alt="timexP Github" width="50px" id="imggithub"></abbr></a>
+                    <figcaption>timexP</figcaption>
+                </figure>
+                <figure>
+                    <a href="https://github.com/ContaPraApagar" target="_blank"><abbr title="Void"><img src="images/hub/github.png" alt="Void Github" width="50px" id="imggithub"></abbr></a>
+                    <figcaption>Void</figcaption>
+                </figure>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Script Js-->
+    <script src="js/script.js"></script>
+    <script src="js/pilarespoo.js"></script>
+</body>
+
+</html>
